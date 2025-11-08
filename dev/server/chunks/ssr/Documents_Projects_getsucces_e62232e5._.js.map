@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/melle/Documents/Projects/getsucces/app/layout.tsx"],"sourcesContent":["import { FC, PropsWithChildren } from \"react\";\n\nconst Layout: FC<PropsWithChildren> = ({ children }) => {\n  return (\n    <html lang=\"en\">\n      <body>{children}</body>\n    </html>\n  );\n};\n\nexport default Layout;\n"],"names":[],"mappings":";;;;;;AAEA,MAAM,SAAgC,CAAC,EAAE,QAAQ,EAAE;IACjD,qBACE,qbAAC;QAAK,MAAK;kBACT,cAAA,qbAAC;sBAAM;;;;;;;;;;;AAGb;uCAEe","debugId":null}},
+    {"offset": {"line": 31, "column": 0}, "map": {"version":3,"sources":["file:///Users/melle/Documents/Projects/getsucces/node_modules/.pnpm/next%4016.0.0_%40babel%2Bcore%407.28.5_react-dom%4019.2.0_react%4019.2.0__react%4019.2.0/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,uPACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0],"debugId":null}}]
+}

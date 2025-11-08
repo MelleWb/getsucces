@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Documents/Projects/getsucces/components/Listing/Listing.css"],"sourcesContent":[".listing {\n    display: flex;\n    flex-direction: column;\n}\n\n.listing__header {\n    display: flex;\n    align-items: center;\n    margin-bottom: 1.25rem;\n}\n\n.listing__title-header {\n    font-size: 1.25rem;\n    margin: 0;\n    padding: 0;\n}\n\n.listing__title-sub-header {\n    font-size: bold;\n    font-size: 1.875rem;\n    width: 80%;\n    margin-top: 1rem;\n}\n\n.listing__button {\n    margin-left: auto;\n}\n\n.listing__cards {\n    display: flex;\n    justify-content: space-between;\n}\n"],"names":[],"mappings":"AAAA;;;;;AAKA;;;;;;AAMA;;;;;;AAMA;;;;;;;AAOA;;;;AAIA"}}]
+}

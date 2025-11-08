@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Documents/Projects/getsucces/components/Information/Information.css"],"sourcesContent":[".information {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: baseline;\n    gap: 100px;\n    padding-top: 50px;\n}\n\n.information__achievements {\n    display: grid;\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n    gap: 16px;\n    align-items: baseline;\n    text-align: center;\n}\n\n.information__left {\n    width: 50%;\n}\n\n.information__title {\n    font-size: 40px;\n    font-weight: bold;\n}\n\n.information__subtitle {\n    font-size: 20px;\n    margin-top: 10px;\n    margin-bottom: 30px;\n}\n\n.information__achievement {\n    display: flex;\n    flex-direction: column;\n    font-size: 25px;\n    padding: 10px;\n}\n\n.information__achievement-number {\n    font-size: 50px;\n    font-weight: bolder;\n}\n\n.information__achievement-title {\n    font-size: 25px;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;AASA;;;;;;;;AAQA;;;;AAIA;;;;;AAKA;;;;;;AAMA;;;;;;;AAOA;;;;;AAKA"}}]
+}

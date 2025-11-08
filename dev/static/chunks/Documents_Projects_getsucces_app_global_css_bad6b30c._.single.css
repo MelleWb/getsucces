@@ -1,0 +1,17 @@
+/* [project]/Documents/Projects/getsucces/app/global.css [app-client] (css) */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.cards {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/*# sourceMappingURL=Documents_Projects_getsucces_app_global_css_bad6b30c._.single.css.map*/

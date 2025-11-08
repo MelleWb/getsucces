@@ -1,0 +1,24 @@
+/* [project]/Documents/Projects/getsucces/components/NavBar/NavBar.css [app-client] (css) */
+.nav-bar {
+  min-height: 72px;
+  margin-bottom: 50px;
+  display: grid;
+}
+
+.nav-bar__inner {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.nav-bar__page-title {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.nav-bar__buttons {
+  gap: 35px;
+  display: flex;
+}
+
+/*# sourceMappingURL=Documents_Projects_getsucces_components_NavBar_NavBar_css_bad6b30c._.single.css.map*/

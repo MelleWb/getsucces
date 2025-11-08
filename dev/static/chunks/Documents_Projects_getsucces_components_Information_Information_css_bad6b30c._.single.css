@@ -1,0 +1,50 @@
+/* [project]/Documents/Projects/getsucces/components/Information/Information.css [app-client] (css) */
+.information {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 100px;
+  padding-top: 50px;
+  display: flex;
+}
+
+.information__achievements {
+  text-align: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: baseline;
+  gap: 16px;
+  display: grid;
+}
+
+.information__left {
+  width: 50%;
+}
+
+.information__title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.information__subtitle {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.information__achievement {
+  flex-direction: column;
+  padding: 10px;
+  font-size: 25px;
+  display: flex;
+}
+
+.information__achievement-number {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.information__achievement-title {
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=Documents_Projects_getsucces_components_Information_Information_css_bad6b30c._.single.css.map*/

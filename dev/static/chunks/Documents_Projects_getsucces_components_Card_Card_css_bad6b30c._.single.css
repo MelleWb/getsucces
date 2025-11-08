@@ -1,0 +1,55 @@
+/* [project]/Documents/Projects/getsucces/components/Card/Card.css [app-client] (css) */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  height: fit-content;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+.card__image-container {
+  aspect-ratio: 16 / 9;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__image {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card__body {
+  margin: 10px 12px;
+  padding: 0;
+}
+
+.card__reviewnumber {
+  z-index: 10;
+  background-color: #fff;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  box-shadow: 0 1px 3px #0003;
+}
+
+.card__price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card__button {
+  margin: 10px 12px 20px;
+}
+
+/*# sourceMappingURL=Documents_Projects_getsucces_components_Card_Card_css_bad6b30c._.single.css.map*/

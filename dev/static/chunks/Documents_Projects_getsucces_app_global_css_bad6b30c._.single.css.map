@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Documents/Projects/getsucces/app/global.css"],"sourcesContent":[".page-container {\n    padding-left: 2rem;\n    padding-right: 2rem;\n    max-width: 1200px;\n    margin: 0 auto;\n}\n\n.cards {\n    display: flex;\n    gap: 20px;\n    justify-content: space-between;\n    flex-wrap: wrap;\n    margin: 0 auto;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;AAOA"}}]
+}
