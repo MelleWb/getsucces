@@ -36,7 +36,7 @@ export const Primary: StoryObj<typeof Listing> = {
         sectionButtons: [{ text: "Bekijk alle huizen", size: "medium" }],
         sectionCard: [
             {
-                imageSrc: "./house1.jpg",
+                imageSrc: "../house1.jpg",
                 title: "Beautiful Family House",
                 reviewNumber: 4.5,
                 subtitle: "Marcobakkerstraat 12 - Amsterdam",
@@ -52,7 +52,7 @@ export const Primary: StoryObj<typeof Listing> = {
                 link: { text: "Nu boeken", size: "medium" },
             },
             {
-                imageSrc: "/house1.jpg",
+                imageSrc: "../house1.jpg",
                 title: "Beautiful Family House",
                 reviewNumber: 4.5,
                 subtitle: "Marcobakkerstraat 12 - Amsterdam",

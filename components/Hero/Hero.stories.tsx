@@ -41,7 +41,7 @@ export default {
 
 export const Primary: StoryObj<typeof Hero> = {
     args: {
-        imageSrc: "/house2.jpg",
+        imageSrc: "../house2.jpg",
         title: "koop/huur jouw droomhuis",
         subtitle: "Ontdek de beste huizen in jouw favoriete locaties.",
         link: { text: "Bekijk huizen", size: "large" },
