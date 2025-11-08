@@ -7,7 +7,7 @@ const WebsiteMain = () => {
         <main>
             <div>
                 <Hero
-                    imageSrc="/house2.jpg"
+                    imageSrc="./house2.jpg"
                     title="koop/huur jouw droomhuis"
                     subtitle="Ontdek de beste huizen in jouw favoriete locaties."
                     agentName="Jan de Vries"

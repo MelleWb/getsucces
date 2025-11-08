@@ -1,4 +1,4 @@
-name: Deploy Next.js site to GitHub Pages (pnpm)
+name: Deploy Next.js and Storybook to GitHub Pages
 
 on:
     push:
@@ -39,10 +39,23 @@ jobs:
             - name: Build Next.js project
               run: pnpm next build
 
-            - name: Upload build output
+            - name: Build Storybook
+              run: pnpm build-storybook
+
+            - name: Prepare combined output
+              run: |
+                  # Kopieer Storybook naar een subfolder
+                  mkdir -p combined-output/storybook
+                  cp -r storybook-static/* combined-output/storybook/
+                  # Kopieer Next.js build naar root
+                  cp -r out/* combined-output/
+                  # Maak een redirect index.html voor storybook
+                  echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=./storybook/"></head></html>' > combined-output/storybook.html
+
+            - name: Upload combined artifact
               uses: actions/upload-pages-artifact@v3
               with:
-                  path: ./out # Next.js export output gaat automatisch hierheen bij `output: 'export'`
+                  path: ./combined-output
 
     deploy:
         runs-on: ubuntu-latest
