@@ -17,30 +17,36 @@ concurrency:
 jobs:
     build:
         runs-on: ubuntu-latest
+
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
 
+            # 🧩 Install pnpm before setting up Node cache
+            - name: Setup pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                  version: 10.19.0
+
+            # 🧩 Setup Node.js en cache pnpm dependencies
             - name: Setup Node.js
               uses: actions/setup-node@v4
               with:
                   node-version: 20
                   cache: "pnpm"
 
-            - name: Setup pnpm
-              uses: pnpm/action-setup@v4
-              with:
-                  version: 10.19.0
-
+            # 📦 Installeer dependencies
             - name: Install dependencies
               run: pnpm install --frozen-lockfile
 
+            # 🏗️ Build en exporteer Next.js-site
             - name: Build Next.js project
               run: pnpm next build
 
             - name: Export static site
               run: pnpm next export
 
+            # 📤 Upload de statische site naar Pages
             - name: Upload build output
               uses: actions/upload-pages-artifact@v3
               with:
