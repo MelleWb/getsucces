@@ -1,0 +1,32 @@
+.listing {
+    display: flex;
+    flex-direction: column;
+}
+
+.listing__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.listing__title-header {
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+}
+
+.listing__title-sub-header {
+    font-size: bold;
+    font-size: 1.875rem;
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.listing__button {
+    margin-left: auto;
+}
+
+.listing__cards {
+    display: flex;
+    justify-content: space-between;
+}

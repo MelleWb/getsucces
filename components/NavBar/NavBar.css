@@ -1,0 +1,22 @@
+.nav-bar {
+    display: grid;
+    min-height: 72px;
+    margin-bottom: 50px;
+}
+
+.nav-bar__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar__page-title {
+    font-size: 35px;
+    font-weight: 700;
+    /* margin-left: 16px; */
+}
+
+.nav-bar__buttons {
+    display: flex;
+    gap: 35px;
+}
