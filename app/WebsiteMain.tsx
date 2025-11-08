@@ -1,5 +1,4 @@
 import Hero from "../components/Hero/Hero";
-import Card from "../components/Card/Card";
 import Information from "../components/Information/Information";
 import Listing from "@/components/Listing/Listing";
 
@@ -29,7 +28,7 @@ const WebsiteMain = () => {
                     ]}
                     sectionCard={[
                         {
-                            imageSrc: "/house1.jpg",
+                            imageSrc: "./house1.jpg",
                             title: "Beautiful Family House",
                             reviewNumber: 4.5,
                             subtitle: "Marcobakkerstraat 12 - Amsterdam",
@@ -37,7 +36,7 @@ const WebsiteMain = () => {
                             link: { text: "Nu boeken", size: "medium" },
                         },
                         {
-                            imageSrc: "/house1.jpg",
+                            imageSrc: "./house1.jpg",
                             title: "Beautiful Family House",
                             reviewNumber: 4.5,
                             subtitle: "Marcobakkerstraat 12 - Amsterdam",
@@ -45,7 +44,7 @@ const WebsiteMain = () => {
                             link: { text: "Nu boeken", size: "medium" },
                         },
                         {
-                            imageSrc: "/house1.jpg",
+                            imageSrc: "./house1.jpg",
                             title: "Beautiful Family House",
                             reviewNumber: 4.5,
                             subtitle: "Marcobakkerstraat 12 - Amsterdam",
