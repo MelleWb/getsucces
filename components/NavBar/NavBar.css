@@ -1,25 +1,33 @@
 .nav-bar {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
+    flex-direction: column;
     min-height: 72px;
     margin-bottom: 50px;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .nav-bar__page-title {
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .nav-bar__buttons {
     display: flex;
-    gap: 35px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .nav-bar__list-item {
     list-style: none;
-    font-size: large;
+    font-size: 16px;
 }
 
 .nav-bar__list-item a:hover {
@@ -36,7 +44,10 @@
 
 .search-bar {
     display: flex;
+    width: 100%;
+    max-width: 400px;
     height: 35px;
+    margin-top: 15px;
 }
 
 .search-bar input {
@@ -44,6 +55,8 @@
     border: 1px solid #ccc;
     border-radius: 3px;
     padding-left: 10px;
+    flex: 1;
+    min-width: 0;
 }
 
 .search-bar__button {
@@ -53,10 +66,87 @@
     color: white;
     background-color: black;
     border: 1px solid black;
+    padding: 0 15px;
+    white-space: nowrap;
 }
 
-/* .search-bar__icon {
-    width: 18px;
-    height: 18px;
-    stroke: white;
-} */
+@media (min-width: 768px) {
+    .nav-bar {
+        flex-direction: row;
+        padding: 0 30px;
+    }
+
+    .nav-bar__page-title {
+        font-size: 32px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .nav-bar__buttons {
+        gap: 25px;
+        justify-content: flex-end;
+    }
+
+    .search-bar {
+        width: auto;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-bar {
+        margin: 0 auto 50px auto;
+        padding: 0;
+        max-width: 1200px;
+    }
+
+    .nav-bar__page-title {
+        font-size: 35px;
+    }
+
+    .nav-bar__buttons {
+        gap: 35px;
+    }
+
+    .nav-bar__list-item {
+        font-size: large;
+    }
+
+    .search-bar {
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        min-height: auto;
+        padding: 15px 20px;
+        margin-bottom: 30px;
+    }
+
+    .nav-bar__page-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .nav-bar__buttons {
+        gap: 15px;
+    }
+
+    .nav-bar__list-item {
+        font-size: 14px;
+    }
+
+    .search-bar {
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .search-bar input {
+        font-size: 14px;
+    }
+
+    .search-bar__button {
+        padding: 0 12px;
+    }
+}

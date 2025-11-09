@@ -1,10 +1,11 @@
 .information {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: baseline;
-    gap: 100px;
-    padding-top: 50px;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 20px 0;
+    box-sizing: border-box;
 }
 
 .information__achievements {
@@ -16,32 +17,137 @@
 }
 
 .information__left {
-    width: 50%;
+    width: 100%;
+    text-align: center;
 }
 
 .information__title {
-    font-size: 40px;
+    font-size: 28px;
     font-weight: bold;
+    line-height: 1.2;
 }
 
 .information__subtitle {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    line-height: 1.4;
 }
 
 .information__achievement {
     display: flex;
     flex-direction: column;
-    font-size: 25px;
-    padding: 10px;
+    font-size: 18px;
+    padding: 15px 10px;
 }
 
 .information__achievement-number {
-    font-size: 50px;
+    font-size: 32px;
     font-weight: bolder;
+    line-height: 1.1;
 }
 
 .information__achievement-title {
-    font-size: 25px;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+    .information {
+        gap: 60px;
+        padding: 40px 30px 0;
+    }
+
+    .information__title {
+        font-size: 32px;
+    }
+
+    .information__subtitle {
+        font-size: 18px;
+    }
+
+    .information__achievement {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .information__achievement-number {
+        font-size: 40px;
+    }
+
+    .information__achievement-title {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .information {
+        flex-direction: row;
+        align-items: baseline;
+        gap: 100px;
+        padding: 50px 0 0;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .information__left {
+        width: 50%;
+        text-align: left;
+    }
+
+    .information__title {
+        font-size: 40px;
+    }
+
+    .information__subtitle {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .information__achievement {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .information__achievement-number {
+        font-size: 50px;
+    }
+
+    .information__achievement-title {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .information {
+        gap: 30px;
+        padding: 20px 15px 0;
+    }
+
+    .information__achievements {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .information__title {
+        font-size: 24px;
+    }
+
+    .information__subtitle {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .information__achievement {
+        font-size: 16px;
+        padding: 12px 8px;
+    }
+
+    .information__achievement-number {
+        font-size: 28px;
+    }
+
+    .information__achievement-title {
+        font-size: 14px;
+    }
 }

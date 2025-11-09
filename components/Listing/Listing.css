@@ -1,32 +1,121 @@
 .listing {
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .listing__header {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 1.25rem;
+    gap: 15px;
+    width: 100%;
 }
 
 .listing__title-header {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     margin: 0;
     padding: 0;
+    font-weight: bold;
 }
 
 .listing__title-sub-header {
-    font-size: bold;
-    font-size: 1.875rem;
-    width: 80%;
-    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    line-height: 1.3;
 }
 
 .listing__button {
-    margin-left: auto;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .listing__cards {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .listing {
+        padding: 0 30px;
+    }
+
+    .listing__header {
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+
+    .listing__title-header {
+        font-size: 1.25rem;
+    }
+
+    .listing__title-sub-header {
+        font-size: 1.75rem;
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+    .listing__button {
+        margin-left: auto;
+        width: auto;
+        margin-top: 0;
+    }
+
+    .listing__cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .listing {
+        padding: 0;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .listing__title-header {
+        font-size: 1.25rem;
+    }
+
+    .listing__title-sub-header {
+        font-size: 1.875rem;
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+    .listing__cards {
+        justify-content: space-evenly;
+        gap: 15px;
+    }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+    .listing {
+        padding: 0 15px;
+    }
+
+    .listing__title-header {
+        font-size: 1rem;
+    }
+
+    .listing__title-sub-header {
+        font-size: 1.25rem;
+        margin-top: 0.25rem;
+    }
+
+    .listing__cards {
+        gap: 15px;
+    }
 }
