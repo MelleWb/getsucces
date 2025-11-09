@@ -1,11 +1,8 @@
 .nav-bar {
-    display: grid;
+    width: 1200px;
+    display: flex;
     min-height: 72px;
     margin-bottom: 50px;
-}
-
-.nav-bar__inner {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -13,10 +10,53 @@
 .nav-bar__page-title {
     font-size: 35px;
     font-weight: 700;
-    /* margin-left: 16px; */
 }
 
 .nav-bar__buttons {
     display: flex;
     gap: 35px;
 }
+
+.nav-bar__list-item {
+    list-style: none;
+    font-size: large;
+}
+
+.nav-bar__list-item a:hover {
+    text-decoration: underline;
+}
+
+.nav-bar__link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s;
+}
+
+.search-bar {
+    display: flex;
+    height: 35px;
+}
+
+.search-bar input {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.search-bar__button {
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+
+/* .search-bar__icon {
+    width: 18px;
+    height: 18px;
+    stroke: white;
+} */

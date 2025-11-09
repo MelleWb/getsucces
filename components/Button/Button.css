@@ -1,11 +1,12 @@
 .button {
     display: inline-block;
     cursor: pointer;
-    border: 0;
-    border-radius: 5px;
+    border: 1px solid;
+    border-radius: 3px;
     font-weight: 700;
     line-height: 1;
-    font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: white;
+    /* font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
 }
 .button--primary {
     background-color: #555ab9;

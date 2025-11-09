@@ -1,32 +1,53 @@
-import { FC, ReactNode } from "react";
-import Button, { ButtonProps } from "../Button/Button";
+import { FC } from "react";
 import "./NavBar.css";
 
 export type NavBarProps = {
     pageTitle: string;
-    navBarButtons?: ButtonProps[];
-    searchbar?: ReactNode;
+    navBarButtons: { text: string; href: string }[];
 };
 
-const NavBar: FC<NavBarProps> = ({
-    pageTitle,
-    navBarButtons = [],
-    searchbar,
-}) => {
+const SearchIcon = () => (
+    <svg
+        className="search-bar__icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+    >
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+    </svg>
+);
+
+const NavBar: FC<NavBarProps> = ({ pageTitle, navBarButtons }) => {
     return (
-        <nav className="nav-bar">
-            <div className="nav-bar__inner">
-                <h1 className="nav-bar__page-title">{pageTitle}</h1>
-                <div className="nav-bar__buttons">
-                    {navBarButtons.map((btn, idx) => (
-                        <Button key={idx} {...btn} />
-                    ))}
-                </div>
-                {searchbar && (
-                    <div className="nav-bar__search-bar">{searchbar}</div>
-                )}
+        <header className="nav-bar">
+            <h1 className="nav-bar__page-title">{pageTitle}</h1>
+            <ul className="nav-bar__buttons">
+                {navBarButtons.map((link, index) => (
+                    <li key={index} className="nav-bar__list-item">
+                        <a href={link.href} className="nav-bar__link">
+                            {link.text}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+            <div className="search-bar">
+                <input
+                    type="text"
+                    className="search-bar__input"
+                    placeholder="Zoeken..."
+                />
+                <button className="search-bar__button" aria-label="Search">
+                    <SearchIcon />
+                </button>
             </div>
-        </nav>
+        </header>
     );
 };
 
