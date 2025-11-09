@@ -97,7 +97,7 @@
     .nav-bar {
         margin: 0 auto 50px auto;
         padding: 0;
-        max-width: 1200px;
+        min-width: 1200px;
     }
 
     .nav-bar__page-title {
