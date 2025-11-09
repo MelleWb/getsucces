@@ -76,7 +76,6 @@
     }
 }
 
-/* Desktop styles */
 @media (min-width: 1024px) {
     .listing {
         padding: 0;
@@ -95,12 +94,11 @@
     }
 
     .listing__cards {
-        justify-content: space-evenly;
+        justify-content: space-between;
         gap: 15px;
     }
 }
 
-/* Small mobile adjustments */
 @media (max-width: 480px) {
     .listing {
         padding: 0 15px;
