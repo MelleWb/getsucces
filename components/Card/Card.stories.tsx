@@ -28,9 +28,9 @@ export default {
             control: "number",
             description: "Price of the property",
         },
-        link: {
-            control: "object",
-            description: "Button link properties",
+        showButton: {
+            control: "boolean",
+            description: "Whether to show the 'View Details' button",
         },
     },
 };
@@ -42,10 +42,7 @@ export const Primary: StoryObj<typeof Card> = {
         title: "Beautiful Family House",
         subtitle: "Marcobakkerstraat 12 - Amsterdam",
         price: 750000,
-        link: {
-            text: "Nu boeken",
-            size: "medium",
-        },
+        showButton: true,
     },
 };
 
