@@ -9,6 +9,12 @@
     width: 100%;
     height: fit-content;
     position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover {
+    background-color: #f8f9fa;
 }
 
 .card__image-container {

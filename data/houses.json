@@ -1,0 +1,42 @@
+[
+    {
+        "imageSrc": "./house1.jpg",
+        "title": "Beautiful Family House",
+        "reviewNumber": 4.5,
+        "subtitle": "Marcobakkerstraat 10 - Amsterdam",
+        "price": 750000,
+        "showButton": true
+    },
+    {
+        "imageSrc": "./house1.jpg",
+        "title": "Modern City Apartment",
+        "reviewNumber": 4.7,
+        "subtitle": "Keizersgracht 5 - Amsterdam",
+        "price": 620000,
+        "showButton": true
+    },
+    {
+        "imageSrc": "./house1.jpg",
+        "title": "Luxury Villa with Pool",
+        "reviewNumber": 4.9,
+        "subtitle": "Bergweg 88 - Rotterdam",
+        "price": 1250000,
+        "showButton": true
+    },
+    {
+        "imageSrc": "./house1.jpg",
+        "title": "Cozy Suburban Home",
+        "reviewNumber": 4.3,
+        "subtitle": "Bloemenlaan 24 - Utrecht",
+        "price": 540000,
+        "showButton": true
+    },
+    {
+        "imageSrc": "./house1.jpg",
+        "title": "Stylish Loft Apartment",
+        "reviewNumber": 4.6,
+        "subtitle": "Stationsstraat 33 - Den Haag",
+        "price": 680000,
+        "showButton": true
+    }
+]

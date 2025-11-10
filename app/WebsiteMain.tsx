@@ -1,6 +1,7 @@
 import Hero from "../components/Hero/Hero";
 import Information from "../components/Information/Information";
 import Listing from "@/components/Listing/Listing";
+import houses from "@/data/houses.json";
 
 const WebsiteMain = () => {
     return (
@@ -26,32 +27,7 @@ const WebsiteMain = () => {
                     sectionButtons={[
                         { text: "Alle huizen bekijken", size: "medium" },
                     ]}
-                    sectionCard={[
-                        {
-                            imageSrc: "./house1.jpg",
-                            title: "Beautiful Family House",
-                            reviewNumber: 4.5,
-                            subtitle: "Marcobakkerstraat 12 - Amsterdam",
-                            price: 750000,
-                            link: { text: "Nu boeken", size: "medium" },
-                        },
-                        {
-                            imageSrc: "./house1.jpg",
-                            title: "Beautiful Family House",
-                            reviewNumber: 4.5,
-                            subtitle: "Marcobakkerstraat 12 - Amsterdam",
-                            price: 750000,
-                            link: { text: "Nu boeken", size: "medium" },
-                        },
-                        {
-                            imageSrc: "./house1.jpg",
-                            title: "Beautiful Family House",
-                            reviewNumber: 4.5,
-                            subtitle: "Marcobakkerstraat 12 - Amsterdam",
-                            price: 750000,
-                            link: { text: "Nu boeken", size: "medium" },
-                        },
-                    ]}
+                    sectionCard={houses.slice(0, 3)}
                 ></Listing>
             </div>
             <Information

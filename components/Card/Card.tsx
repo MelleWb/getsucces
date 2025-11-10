@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Button, { ButtonProps } from "../Button/Button";
 import Image from "next/image";
+import Link from "next/link";
 import "./Card.css";
 
 export type CardProps = {
@@ -9,7 +10,7 @@ export type CardProps = {
     title: string;
     subtitle?: string;
     price?: number;
-    link?: ButtonProps;
+    showButton?: boolean;
 };
 
 const Card: FC<CardProps> = ({
@@ -18,10 +19,15 @@ const Card: FC<CardProps> = ({
     title,
     subtitle,
     price,
-    link,
+    showButton,
 }) => {
+    const id = subtitle
+        ?.toLowerCase()
+        .replace(/\s+/g, "")
+        .replace(/[^a-z0-9]/g, "");
+
     return (
-        <div className="card">
+        <Link href={`/detailpage/${id}`} className="card">
             <div className="card__image-container">
                 {imageSrc && (
                     <Image
@@ -31,7 +37,9 @@ const Card: FC<CardProps> = ({
                         className="card__image"
                     />
                 )}
-                <div className="card__reviewnumber">{reviewNumber}</div>
+                {reviewNumber && (
+                    <div className="card__reviewnumber">{reviewNumber}</div>
+                )}
             </div>
             <div className="card__body">
                 <h2 className="card__title">{title}</h2>
@@ -44,8 +52,12 @@ const Card: FC<CardProps> = ({
                     })}
                 </div>
             </div>
-            <div className="card__button">{link && <Button {...link} />}</div>
-        </div>
+            {showButton && (
+                <div className="card__button">
+                    <Button text="Bekijk details" size="medium" />
+                </div>
+            )}
+        </Link>
     );
 };
 
