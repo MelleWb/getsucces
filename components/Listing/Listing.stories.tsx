@@ -41,7 +41,7 @@ export const Primary: StoryObj<typeof Listing> = {
                 reviewNumber: 4.5,
                 subtitle: "Marcobakkerstraat 12 - Amsterdam",
                 price: 750000,
-                link: { text: "Nu boeken", size: "medium" },
+                showButton: true,
             },
             {
                 imageSrc: "../house1.jpg",
@@ -49,7 +49,7 @@ export const Primary: StoryObj<typeof Listing> = {
                 reviewNumber: 4.5,
                 subtitle: "Marcobakkerstraat 12 - Amsterdam",
                 price: 750000,
-                link: { text: "Nu boeken", size: "medium" },
+                showButton: true,
             },
             {
                 imageSrc: "../house1.jpg",
@@ -57,7 +57,7 @@ export const Primary: StoryObj<typeof Listing> = {
                 reviewNumber: 4.5,
                 subtitle: "Marcobakkerstraat 12 - Amsterdam",
                 price: 750000,
-                link: { text: "Nu boeken", size: "medium" },
+                showButton: true,
             },
         ],
     },
